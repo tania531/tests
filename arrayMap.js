@@ -6,11 +6,13 @@
 var array = ["C","O","D","I","N","G"];
 var key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-
-function arrayMap(key){
+var result = ' ';
+function arrayMap(key, array){
+  var result = '';
   result = array.map(function(e) { return key[e/2]; }).join('');
   console.log(result); // CODING
   return result;
 }
 
-console.log(arrayMap(key));
+result = arrayMap(key);
+console.log("result: ", result);
