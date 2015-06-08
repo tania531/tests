@@ -9,10 +9,11 @@ var key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var result = ' ';
 function arrayMap(key, array){
   var result = '';
+  console.log('array', array); // CODING
   result = array.map(function(e) { return key[e/2]; }).join('');
-  console.log(result); // CODING
+  
   return result;
 }
 
-result = arrayMap(key);
+result = arrayMap(key, array);
 console.log("result: ", result);
