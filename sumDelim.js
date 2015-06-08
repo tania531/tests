@@ -1,6 +1,6 @@
 
 
-// 2. splitSum()
+
 // Takes 2 arguments
 //--------------------------------------------------------
 result = splitSum("3:4:5:1", ":");
@@ -12,12 +12,16 @@ function splitSum(string, delim){
   console.log("arguments: ", arguments);
   delim = arguments[1];
   string = string.split(""+delim+"");
+  var total = 0;
   string.forEach(function(s){
     s = s*1;
+    console.log("s: ", s);
+    total += s;
   });
   console.log("string: ", string);
   console.log("delim: ", delim);
-  string.reduce(function(acc, curr){
-    return acc + curr;
-  });
+  // string.reduce(function(acc, curr){
+  //   return acc + curr;
+  // });
+  return total;
 }
